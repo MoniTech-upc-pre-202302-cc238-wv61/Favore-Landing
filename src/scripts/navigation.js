@@ -1,43 +1,29 @@
-const responsiveNavbar = document.getElementById('responsive-navbar');
-const menuIcon = document.getElementById('menu-icon');
+const howItWorksSectionRef = document.getElementById("how-it-works-section");
+const reviewsSectionRef = document.getElementById("reviews-section");
+const aboutSectionRef = document.getElementById("about-section");
+const downloadSectionRef = document.getElementById("download-section");
+const becomeFavorerSectionRef = document.getElementById("become-favorer-section");
 
-function onToggleMenu(e){
-    e.name = e.name === 'menu' ? 'close': 'menu';
-    responsiveNavbar.classList.remove('hidden');
-    if (e.name === 'menu'){
-        responsiveNavbar.classList.add('hidden');
-    }
-}
-
-function closeToggleMenu(e){
-    menuIcon.name = menuIcon.name === 'menu' ? 'close': 'menu';
-    responsiveNavbar.classList.add('hidden');
-}
-
-const aboutSectionRef = document.getElementById("about");
-const productSectionRef = document.getElementById("product");
-const serviceSectionRef = document.getElementById("service");
-const locationSectionRef = document.getElementById("location");
 
 const navigate = (htmlElement, scrollLogicalPosition = "start") => htmlElement.scrollIntoView({ behavior: "smooth", block: scrollLogicalPosition });
 
+document.getElementById("how-it-works-link").addEventListener("click", (event) => {
+    event.preventDefault();
+    navigate(howItWorksSectionRef);
+});
+document.getElementById("reviews-link").addEventListener("click", (event) => {
+    event.preventDefault();
+    navigate(reviewsSectionRef);
+});
 document.getElementById("about-link").addEventListener("click", (event) => {
     event.preventDefault();
     navigate(aboutSectionRef);
 });
-document.getElementById("product-link").addEventListener("click", (event) => {
+document.getElementById("download-link").addEventListener("click", (event) => {
     event.preventDefault();
-    navigate(productSectionRef);
+    navigate(downloadSectionRef);
 });
-document.getElementById("service-link").addEventListener("click", (event) => {
+document.getElementById("become-favorer-button").addEventListener("click", (event) => {
     event.preventDefault();
-    navigate(serviceSectionRef);
-});
-document.getElementById("location-link").addEventListener("click", (event) => {
-    event.preventDefault();
-    navigate(locationSectionRef);
-});
-document.getElementById("location-link-button").addEventListener("click", (event) => {
-    event.preventDefault();
-    navigate(locationSectionRef);
+    navigate(becomeFavorerSectionRef);
 });

@@ -16,7 +16,109 @@
 </head>
 <body>
     <main>
+      <nav class="sticky container mx-auto">
+        <div class="flex px-6 py-4 place-content-between">
+          <img src="./assets/favore-logo.png" alt="Lins logo" class="h-14 md:h-20 w-´full hover:scale-95 duration-200" />
+          <ul class="hidden md:flex gap-8 items-center">
+            <li class="font-medium text-xl hover:text-primary hover:scale-95 hover:cursor-pointer duration-200" >
+              <a id="about-link">
+                How it works
+              </a>
+            </li>
+            <li class="font-medium text-xl hover:text-primary hover:scale-95 hover:cursor-pointer duration-200" >
+              <a id="about-link">
+                Reviews
+              </a>
+            </li>
+            <li class="font-medium text-xl hover:text-primary hover:scale-95 hover:cursor-pointer duration-200" >
+              <a id="about-link">
+                About
+              </a>
+            </li>
+            <li class="font-medium text-xl hover:text-primary hover:scale-95 hover:cursor-pointer duration-200" >
+              <a id="about-link">
+                Download
+              </a>
+            </li>
+            <li>
+              <a id="location-link">
+                <button class="btn-filled">
+                  Become Favorer
+                </button>
+              </a>
+            </li>
+          </ul>
+          <div class="md:hidden flex items-center">
+            <button data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
+              <ion-icon class="text-5xl" name="menu"></ion-icon>
+            </button>
+          </div>
+        </div>
+    </nav>
+    <div id="drawer-navigation" class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-navigation-label">
+      <h5 id="drawer-navigation-label" class="font-bold uppercase">
+        Favore
+      </h5>
+      <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation" class="bg-transparent text-sm w-8 h-8 absolute top-2.5 right-2.5 inline-flex items-center justify-center" >
+        <ion-icon class="text-5xl" name="close"></ion-icon>
+      </button>
+      <ul data-drawer-hide="drawer-navigation" class="space-y-6 mt-6">
+        <li class="font-medium text-xl" >
+          <a id="about-link" class="flex items-center gap-2">
+            <ion-icon name="reader"></ion-icon>
+            How it works
+          </a>
+        </li>
+        <li class="font-medium text-xl" >
+          <a id="about-link" class="flex items-center gap-2">
+            <ion-icon name="sparkles"></ion-icon>
+            Reviews
+          </a>
+        </li>
+        <li class="font-medium text-xl" >
+          <a id="about-link" class="flex items-center gap-2">
+            <ion-icon name="reader"></ion-icon>
+            About
+          </a>
+        </li>
+        <li class="font-medium text-xl" >
+          <a id="about-link" class="flex items-center gap-2">
+            <ion-icon name="download"></ion-icon>
+            Download
+          </a>
+        </li>
+        <li class="font-semibold text-xl text-primary" >
+          <a id="about-link" class="flex items-center gap-2">
+            <ion-icon name="briefcase"></ion-icon>
+            Become Favorer
+          </a>
+        </li>
+      </ul>   
+    </div>
+    <section id="hero-section">
 
+    </section>
+    <section id="how-it-works-section">
+
+    </section>
+    <section id="available-countries-section">
+
+    </section>
+    <section id="reviews-section">
+
+    </section>
+    <section id="about-section">
+
+    </section>
+    <section id="download-section">
+
+    </section>
+    <section id="become-favorer-button">
+
+    </section>
+    <section id="footer-button">
+
+    </section>
     </main>
     <script src="./scripts/navigation.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
