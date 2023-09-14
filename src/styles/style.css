@@ -15,6 +15,11 @@
 }
 
 @layer components {
+  .btn-filled {
+    @apply text-xl font-medium text-snow;
+    @apply bg-secondary px-8 py-4 rounded-full;
+    @apply hover:bg-primary duration-150
+  }
 
 }
 
