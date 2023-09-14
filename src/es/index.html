@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="robots" content="index, follow"> 
+    <meta name="author" content="MoniTech" />
+    <title>Favore | Get help with anything anywhere anytime</title> 
+    <meta name="keywords" content="favore, freelancer, freelance jobs, hire people, hire services, find help, local help, errands, chores, projects, cleaning, organizing, handyman work, pet care, tutoring, education, tech, art"> 
+    <meta name="description" content="Favore is a platform that connects you with local people who can help you with your errands, chores, and projects. Find help with everything from cleaning and organizing to handyman work and pet care. Literally there are people available for anything you need."> 
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/tailwind.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+    <nav class="sticky container mx-auto">
+        <div class="flex px-6 py-4 place-content-between">
+          <img src="./assets/lins-logo.png" alt="Lins logo" class="h-14 md:h-20 w-´full hover:scale-95 duration-200" />
+          <div class="hidden md:flex gap-6 items-center">
+            <a class="font-medium text-xl hover:text-secondary hover:scale-95 hover:cursor-pointer duration-200" id="about-link">Nosotros</a>
+            <a class="font-medium text-xl hover:text-secondary hover:scale-95 hover:cursor-pointer duration-200" id="product-link">Productos</a>
+            <a class="font-medium text-xl hover:text-secondary hover:scale-95 hover:cursor-pointer duration-200" id="service-link">Servicio Técnico</a>
+            <a class="font-medium text-xl hover:text-secondary hover:scale-95 hover:cursor-pointer duration-200" id="location-link">Ubícanos</a>
+          </div>
+          <div class="md:hidden flex items-center">
+            <ion-icon class="text-5xl" onclick="onToggleMenu(this)" name="menu" id="menu-icon"></ion-icon>
+          </div>
+        </div>
+        <div id="responsive-navbar" class="hidden justify-center items-center text-center">
+          <div class="grid gap-6 w-full py-4 font-medium text-xl">
+            <a class="font-medium text-xl" onclick="closeToggleMenu(this)" id="about-link" href="#about">Nosotros</a>
+            <a class="font-medium text-xl" onclick="closeToggleMenu(this)" id="product-link" href="#product">Productos</a>
+            <a class="font-medium text-xl" onclick="closeToggleMenu(this)" id="service-link" href="#service">Servicio Técnico</a>
+            <a class="font-medium text-xl" onclick="closeToggleMenu(this)" id="location-link" href="#location">Ubícanos</a>
+          </div>
+        </div>
+    </nav>
+    <main>
+
+    </main>
+    <script src="./scripts/navigation.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
