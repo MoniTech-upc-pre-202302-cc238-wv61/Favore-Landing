@@ -1259,6 +1259,10 @@ html {
   height: 1.5rem;
 }
 
+.h-64 {
+  height: 16rem;
+}
+
 .h-8 {
   height: 2rem;
 }
@@ -1283,8 +1287,8 @@ html {
   height: 100vh;
 }
 
-.h-64 {
-  height: 16rem;
+.h-36 {
+  height: 9rem;
 }
 
 .w-1\/2 {
@@ -1655,6 +1659,11 @@ html {
   padding-bottom: 0.75rem;
 }
 
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1665,14 +1674,19 @@ html {
   padding-bottom: 2rem;
 }
 
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
-.py-32 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .pt-2 {
@@ -1715,6 +1729,11 @@ html {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -1776,9 +1795,8 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-yellow-300 {
-  --tw-text-opacity: 1;
-  color: rgb(250 202 21 / var(--tw-text-opacity));
+.underline {
+  text-decoration-line: underline;
 }
 
 .opacity-0 {
@@ -2072,20 +2090,16 @@ html {
     height: 5rem;
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:items-start {
     align-items: flex-start;
   }
 
-  .md\:gap-16 {
-    gap: 4rem;
-  }
-
   .md\:gap-20 {
     gap: 5rem;
-  }
-
-  .md\:gap-32 {
-    gap: 8rem;
   }
 
   .md\:gap-24 {
@@ -2115,6 +2129,11 @@ html {
     font-size: 3.75rem;
     line-height: 1;
   }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2134,6 +2153,18 @@ html {
     display: none;
   }
 
+  .lg\:h-52 {
+    height: 13rem;
+  }
+
+  .lg\:h-96 {
+    height: 24rem;
+  }
+
+  .lg\:w-auto {
+    width: auto;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2146,6 +2177,11 @@ html {
     align-items: flex-start;
   }
 
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .lg\:pr-32 {
     padding-right: 8rem;
   }
@@ -2156,6 +2192,11 @@ html {
 
   .lg\:text-start {
     text-align: start;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .lg\:text-xl {
