@@ -19,7 +19,7 @@
       <nav class="sticky container mx-auto">
         <div class="flex px-6 py-4 place-content-between">
           <img src="./assets/favore-logo.png" alt="Favore logo" class="h-16 hover:scale-95 duration-200" />
-          <ul class="hidden md:flex gap-8 items-center">
+          <ul class="hidden lg:flex gap-8 items-center">
             <li class="font-medium text-lg hover:text-primary hover:scale-95 hover:cursor-pointer duration-200" >
               <a id="about-link">
                 How it works
@@ -48,7 +48,7 @@
               </a>
             </li>
           </ul>
-          <div class="md:hidden flex items-center">
+          <div class="lg:hidden flex items-center">
             <button data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
               <ion-icon class="text-5xl" name="menu"></ion-icon>
             </button>
@@ -96,15 +96,15 @@
       </ul>   
     </div>
     <section id="hero-section" class="bg-[url('../assets/hero-background.png')] bg-cover h-[820px] flex justify-center items-center">
-      <div class="container mx-auto md:flex-col p-12 md:grid md:grid-cols-2">
-        <div class="text-center md:text-left box-border md:pr-32 flex flex-col items-center md:items-start">
-          <p class="text-6xl font-bold md:text-left" style="line-height: 1.2;">
+      <div class="container mx-auto lg:flex-col p-12 lg:grid lg:grid-cols-2">
+        <div class="text-center lg:text-left box-border lg:pr-32 flex flex-col items-center lg:items-start">
+          <p class="text-5xl md:text-6xl font-bold lg:text-left" style="line-height: 1.2;">
             <span class="text-secondary">Get help with</span><br/>Anything<br/>Anywhere<br/>at Anytime
           </p>
           <p class="text-2xl my-6 font-medium">
             Running errands, house chores, tutoring your nephew or perhaps building a project? We’ve got you covered.
           </p>
-          <div class="flex items-center md:items-start">
+          <div class="flex items-center lg:items-start">
             <a href="" title="Download Favore in Google Play Store">
               <img src="./assets/google-play-badge.png" alt="Google Play Badge" class="h-16 w-auto hover:scale-95 duration-200"/>
             </a>
@@ -112,9 +112,42 @@
         </div>
       </div>
     </section>
-    
     <section id="how-it-works-section">
-
+      <div class="container mx-auto py-24 px-8 md:px-48">
+        <div class="flex gap-8 md:gap-20 items-center">
+          <img src="./assets/how-it-works-buble.png" alt="How it works image" class="drop-shadow-md hidden lg:block h-[440px] w-auto">
+          <div class="grid gap-12">
+            <h1 class="text-primary font-bold text-4xl md:text-5xl text-center md:text-start">What is Favore?</h1>
+            <p class="text-justify text-xl">Favore connects people with favorers for any task, including house chores, shopping, moving, cleaning, babysitting, tutoring, general assisting, project building, and many more.</p>
+            <ul class="text-lg grid gap-4">
+              <li class="flex items-center gap-4"><ion-icon size="large" name="checkmark"></ion-icon>Favore is a convenient way to get help with anything you can imagine</li>
+              <li class="flex items-center gap-4"><ion-icon size="large" name="checkmark"></ion-icon>Find local or remote favorers depending on your needs</li>
+              <li class="flex items-center gap-4"><ion-icon size="large" name="checkmark"></ion-icon>Chat, tip and review your favorer all in the same platform</li>
+            </ul>
+        </div>
+        </div>
+      </div>
+      <div class="bg-secondary-light">
+        <div class="container mx-auto py-24 px-8 md:px-48">
+          <div class="grid lg:flex gap-16">
+            <div class="flex flex-col gap-8 items-center justify-center">
+              <h1 class="font-semibold text-2xl">1. Search for a <span class="text-primary font-bold">Favorer</span></h1>
+              <img src="./assets/pexels-anna-shvets-5257218.jpg" alt="Search for a Favorer image" class="h-56 w-56 object-cover rounded-full"/>
+              <p class="text-xl text-center">Choose from a variety of favorers with different skills and experience levels</p>
+            </div>
+            <div class="flex flex-col gap-8 items-center justify-center">
+              <h1 class="font-semibold text-2xl">2. Hire and chat with <span class="text-primary font-bold">Favorer</span></h1>
+              <img src="./assets/pexels-ketut-subiyanto-4247728.jpg" alt="Search for a Favorer image" class="h-56 w-56 object-cover rounded-full"/>
+              <p class="text-xl text-center">Contact with your favorer and give details about your needs. Chat and view the progress all in the same platform</p>
+            </div>
+            <div class="flex flex-col gap-8 items-center justify-center">
+              <h1 class="font-semibold text-2xl">3. Review your <span class="text-primary font-bold">Favorer</span></h1>
+              <img src="./assets/pexels-cytonn-photography-955388.jpg" alt="Search for a Favorer image" class="h-56 w-56 object-cover rounded-full"/>
+              <p class="text-xl text-center">Reviewing you favorer will help others. Leave comments about your experience!</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="available-countries-section">
 
