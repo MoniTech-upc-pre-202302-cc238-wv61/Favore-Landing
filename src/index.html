@@ -16,17 +16,17 @@
 </head>
 <body>
     <main>
-      <nav class="sticky container mx-auto">
-        <div class="flex px-6 py-4 place-content-between">
+      <nav class="sticky top-0 bg-snow">
+        <div class="flex px-6 py-4 place-content-between container mx-auto">
           <img src="./assets/favore-logo.png" alt="Favore logo" class="h-16 hover:scale-95 duration-200" />
           <ul class="hidden lg:flex gap-8 items-center">
             <li class="font-medium text-lg hover:text-primary hover:scale-95 hover:cursor-pointer duration-200" >
-              <a id="about-link">
+              <a id="how-it-works-link">
                 How it works
               </a>
             </li>
             <li class="font-medium text-lg hover:text-primary hover:scale-95 hover:cursor-pointer duration-200" >
-              <a id="about-link">
+              <a id="reviews-link">
                 Reviews
               </a>
             </li>
@@ -36,12 +36,12 @@
               </a>
             </li>
             <li class="font-medium text-lg hover:text-primary hover:scale-95 hover:cursor-pointer duration-200" >
-              <a id="about-link">
+              <a id="download-link">
                 Download
               </a>
             </li>
             <li>
-              <a id="location-link">
+              <a id="become-favorer-button">
                 <button class="btn-filled">
                   Become Favorer
                 </button>
@@ -62,33 +62,33 @@
       <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation" class="bg-transparent text-sm w-8 h-8 absolute top-2.5 right-2.5 inline-flex items-center justify-center" >
         <ion-icon class="text-5xl" name="close"></ion-icon>
       </button>
-      <ul data-drawer-hide="drawer-navigation" class="space-y-6 mt-6">
+      <ul class="space-y-6 mt-6">
         <li class="font-medium text-xl" >
-          <a id="about-link" class="flex items-center gap-2">
+          <a href="#how-it-works-section" class="flex items-center gap-2" data-drawer-hide="drawer-navigation">
             <ion-icon name="reader"></ion-icon>
             How it works
           </a>
         </li>
         <li class="font-medium text-xl" >
-          <a id="about-link" class="flex items-center gap-2">
+          <a href="#reviews-section" class="flex items-center gap-2" data-drawer-hide="drawer-navigation">
             <ion-icon name="sparkles"></ion-icon>
             Reviews
           </a>
         </li>
         <li class="font-medium text-xl" >
-          <a id="about-link" class="flex items-center gap-2">
+          <a href="#about-section" class="flex items-center gap-2" data-drawer-hide="drawer-navigation">
             <ion-icon name="reader"></ion-icon>
             About
           </a>
         </li>
         <li class="font-medium text-xl" >
-          <a id="about-link" class="flex items-center gap-2">
+          <a href="#download-section" class="flex items-center gap-2" data-drawer-hide="drawer-navigation">
             <ion-icon name="download"></ion-icon>
             Download
           </a>
         </li>
         <li class="font-semibold text-xl text-primary" >
-          <a id="about-link" class="flex items-center gap-2">
+          <a href="#become-favorer-section" class="flex items-center gap-2" data-drawer-hide="drawer-navigation">
             <ion-icon name="briefcase"></ion-icon>
             Become Favorer
           </a>
@@ -114,7 +114,7 @@
     </section>
     <section id="how-it-works-section">
       <div class="container mx-auto py-24 px-8 md:px-48">
-        <div class="flex gap-8 md:gap-20 items-center">
+        <div class="flex gap-8 md:gap-20 items-center justify-center">
           <img src="./assets/how-it-works-buble.png" alt="How it works image" class="drop-shadow-md hidden lg:block h-[440px] w-auto">
           <div class="grid gap-12">
             <h1 class="text-primary font-bold text-4xl md:text-5xl text-center md:text-start">What is Favore?</h1>
@@ -128,29 +128,79 @@
         </div>
       </div>
       <div class="bg-secondary-light">
-        <div class="container mx-auto py-24 px-8 md:px-48">
-          <div class="grid lg:flex gap-16">
+        <div class="container mx-auto py-24 px-8 lg:px-48">
+          <div class="grid lg:flex gap-16 text-center">
             <div class="flex flex-col gap-8 items-center justify-center">
               <h1 class="font-semibold text-2xl">1. Search for a <span class="text-primary font-bold">Favorer</span></h1>
-              <img src="./assets/pexels-anna-shvets-5257218.jpg" alt="Search for a Favorer image" class="h-56 w-56 object-cover rounded-full"/>
-              <p class="text-xl text-center">Choose from a variety of favorers with different skills and experience levels</p>
+              <img src="./assets/works-1.png" alt="Search for a Favorer image" class="h-56 w-56 object-cover"/>
+              <p class="text-xl">Choose from a variety of favorers with different skills and experience levels</p>
             </div>
             <div class="flex flex-col gap-8 items-center justify-center">
               <h1 class="font-semibold text-2xl">2. Hire and chat with <span class="text-primary font-bold">Favorer</span></h1>
-              <img src="./assets/pexels-ketut-subiyanto-4247728.jpg" alt="Search for a Favorer image" class="h-56 w-56 object-cover rounded-full"/>
-              <p class="text-xl text-center">Contact with your favorer and give details about your needs. Chat and view the progress all in the same platform</p>
+              <img src="./assets/works-2.png" alt="Search for a Favorer image" class="h-56 w-56 object-cover"/>
+              <p class="text-xl">Contact with your favorer and give details about your needs. Chat and view the progress all in the same platform</p>
             </div>
             <div class="flex flex-col gap-8 items-center justify-center">
               <h1 class="font-semibold text-2xl">3. Review your <span class="text-primary font-bold">Favorer</span></h1>
-              <img src="./assets/pexels-cytonn-photography-955388.jpg" alt="Search for a Favorer image" class="h-56 w-56 object-cover rounded-full"/>
-              <p class="text-xl text-center">Reviewing you favorer will help others. Leave comments about your experience!</p>
+              <img src="./assets/works-3.png" alt="Search for a Favorer image" class="h-56 w-56 object-cover"/>
+              <p class="text-xl">Reviewing you favorer will help others. Leave comments about your experience!</p>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section id="available-countries-section">
-
+      <div class="container mx-auto py-24 px-8 md:px-48">
+        <div class="lg:flex flex-row gap-8 md:gap-20 items-start justify-center">
+          <div>
+            <div class="grid gap-2 py-8 text-center md:text-start">
+              <h1 class="text-4xl md:text-5xl font-bold text-contrast">Countries available</h1>
+              <p class="text-xl">We are working to bring Favore to the world.</p>
+            </div>
+            <img src="./assets/globe.png" alt="How it works image" class="drop-shadow-md hidden lg:block h-48 w-auto">
+          </div>
+          <div class="flex gap-8 md:gap-16 items-center md:items-start justify-center">
+            <div>
+              <div class="grid gap-2 my-6">
+                <h1 class="uppercase btn-filled-no-hover text-center">South America</h1>
+                <ul class="text-xl text-center font-medium">
+                  <li>Peru</li>
+                  <li>Chile</li>
+                  <li>Bolivia</li>
+                  <li>Argentina</li>
+                  <li>Brazil</li>
+                </ul>
+              </div>
+              <div class="grid gap-2 my-6">
+                <h1 class="uppercase btn-filled-no-hover">North America</h1>
+                <ul class="text-xl text-center font-medium">
+                  <li>Canada</li>
+                  <li>Mexico</li>
+                  <li>United States</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="grid gap-2 my-6">
+                <h1 class="uppercase btn-filled-no-hover">Europe</h1>
+                <ul class="text-xl text-center font-medium">
+                  <li>France</li>
+                  <li>Germany</li>
+                  <li>Italy</li>
+                  <li>Spain</li>
+                </ul>
+              </div>
+              <div class="grid gap-2 my-6">
+                <h1 class="uppercase btn-filled-no-hover">Africa</h1>
+                <p class="text-xl text-center font-medium">Coming soon</p>
+              </div>
+              <div class="grid gap-2 my-6">
+                <h1 class="uppercase btn-filled-no-hover">Asia</h1>
+                <p class="text-xl text-center font-medium">Coming soon</p>
+              </div>
+            </div>
+        </div>
+        </div>
     </section>
     <section id="reviews-section">
 

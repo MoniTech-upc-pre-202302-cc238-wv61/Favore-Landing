@@ -20,7 +20,10 @@
     @apply bg-secondary px-8 py-2 rounded-full;
     @apply hover:bg-primary duration-150
   }
-
+  .btn-filled-no-hover {
+    @apply text-lg font-medium text-snow text-center justify-center;
+    @apply bg-secondary px-8 py-2 rounded-full items-center;
+  }
 }
 
 /* ===== Scrollbar CSS ===== */
