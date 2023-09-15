@@ -16,7 +16,7 @@
 </head>
 <body>
     <main>
-      <nav class="sticky top-0 bg-snow">
+      <nav class="sticky top-0 bg-snow drop-shadow-lg">
         <div class="flex px-6 py-4 place-content-between container mx-auto">
           <img src="./assets/favore-logo.png" alt="Favore logo" class="h-16 hover:scale-95 duration-200" />
           <ul class="hidden lg:flex gap-8 items-center">
@@ -41,7 +41,7 @@
               </a>
             </li>
             <li>
-              <a id="become-favorer-button">
+              <a href="#become-favorer-section">
                 <button class="btn-filled">
                   Become Favorer
                 </button>
@@ -113,9 +113,9 @@
       </div>
     </section>
     <section id="how-it-works-section">
-      <div class="container mx-auto py-24 px-8 md:px-48">
+      <div class="container mx-auto py-32 px-8 md:px-48">
         <div class="flex gap-8 md:gap-20 items-center justify-center">
-          <img src="./assets/how-it-works-buble.png" alt="How it works image" class="drop-shadow-md hidden lg:block h-[440px] w-auto">
+          <img src="./assets/how-it-works-buble.png" alt="How it works image" class="hidden lg:block h-[440px] w-auto">
           <div class="grid gap-12">
             <h1 class="text-primary font-bold text-4xl md:text-5xl text-center md:text-start">What is Favore?</h1>
             <p class="text-justify text-xl">Favore connects people with favorers for any task, including house chores, shopping, moving, cleaning, babysitting, tutoring, general assisting, project building, and many more.</p>
@@ -128,20 +128,20 @@
         </div>
       </div>
       <div class="bg-secondary-light">
-        <div class="container mx-auto py-24 px-8 lg:px-48">
-          <div class="grid lg:flex gap-16 text-center">
+        <div class="container mx-auto py-16 px-8">
+          <div class="grid lg:flex gap-16 text-center justify-between">
             <div class="flex flex-col gap-8 items-center justify-center">
-              <h1 class="font-semibold text-2xl">1. Search for a <span class="text-primary font-bold">Favorer</span></h1>
+              <h1 class="font-semibold text-2xl">1. Search for a <span class="text-contrast font-bold">Favorer</span></h1>
               <img src="./assets/works-1.png" alt="Search for a Favorer image" class="h-56 w-56 object-cover"/>
               <p class="text-xl">Choose from a variety of favorers with different skills and experience levels</p>
             </div>
             <div class="flex flex-col gap-8 items-center justify-center">
-              <h1 class="font-semibold text-2xl">2. Hire and chat with <span class="text-primary font-bold">Favorer</span></h1>
+              <h1 class="font-semibold text-2xl">2. Hire and chat with <span class="text-contrast font-bold">Favorer</span></h1>
               <img src="./assets/works-2.png" alt="Search for a Favorer image" class="h-56 w-56 object-cover"/>
               <p class="text-xl">Contact with your favorer and give details about your needs. Chat and view the progress all in the same platform</p>
             </div>
             <div class="flex flex-col gap-8 items-center justify-center">
-              <h1 class="font-semibold text-2xl">3. Review your <span class="text-primary font-bold">Favorer</span></h1>
+              <h1 class="font-semibold text-2xl">3. Review your <span class="text-contrast font-bold">Favorer</span></h1>
               <img src="./assets/works-3.png" alt="Search for a Favorer image" class="h-56 w-56 object-cover"/>
               <p class="text-xl">Reviewing you favorer will help others. Leave comments about your experience!</p>
             </div>
@@ -150,16 +150,16 @@
       </div>
     </section>
     <section id="available-countries-section">
-      <div class="container mx-auto py-24 px-8 md:px-48">
+      <div class="container mx-auto px-8 py-20">
         <div class="lg:flex flex-row gap-8 md:gap-20 items-start justify-center">
-          <div>
+          <div class="flex flex-col items-center">
             <div class="grid gap-2 py-8 text-center md:text-start">
-              <h1 class="text-4xl md:text-5xl font-bold text-contrast">Countries available</h1>
+              <h1 class="text-4xl md:text-5xl font-bold text-primary">Countries available</h1>
               <p class="text-xl">We are working to bring Favore to the world.</p>
             </div>
-            <img src="./assets/globe.png" alt="How it works image" class="drop-shadow-md hidden lg:block h-48 w-auto">
+            <img src="./assets/globe.png" alt="How it works image" class="drop-shadow-md hidden lg:block h-64 w-auto">
           </div>
-          <div class="flex gap-8 md:gap-16 items-center md:items-start justify-center">
+          <div class="flex gap-8 md:gap-24 items-center md:items-start justify-center">
             <div>
               <div class="grid gap-2 my-6">
                 <h1 class="uppercase btn-filled-no-hover text-center">South America</h1>
@@ -202,11 +202,154 @@
         </div>
         </div>
     </section>
-    <section id="reviews-section">
-
+    <section id="reviews-section" class="bg-secondary-light">
+      <div class="container mx-auto px-8 py-20">
+        <div class="grid gap-2 text-center lg:text-start">
+          <h1 class="text-4xl md:text-5xl font-bold text-primary">What our users say</h1>
+          <p class="text-xl">Favore will always be there when you need a hand</p>
+        </div>
+        <div class="hidden lg:grid lg:grid-cols-2 gap-8 mt-16">
+          <div id="user-review" class="flex gap-8 md:py-4">
+            <img src="./assets/user-1.png" alt="Reviewer profile picture" class="h-16"/>
+            <div>
+              <div class="flex gap-4 items-center">
+                <h1 class="text-xl font-bold">Jhon Nick</h1>
+                <div class="flex gap-2 items-center text-contrast text-md lg:text-xl">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+              <p>"I needed help assembling some furniture and Favore was a lifesaver! The tasker was very professional and efficient, and the job was done in no time. I would definitely use Favore again."</p>
+            </div>
+          </div>
+          <div id="user-review" class="flex gap-8 md:py-4">
+            <img src="./assets/user-3.png" alt="Reviewer profile picture" class="h-16"/>
+            <div>
+              <div class="flex gap-4 items-center">
+                <h1 class="text-xl font-bold">Susan Jones</h1>
+                <div class="flex gap-2 items-center text-contrast text-md lg:text-xl">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+              <p>"The tasker did a great job cleaning my house and I was very happy with the results. I would definitely use Favore again."</p>
+            </div>
+          </div>
+          <div id="user-review" class="flex gap-8 md:py-4">
+            <img src="./assets/user-2.png" alt="Reviewer profile picture" class="h-16"/>
+            <div>
+              <div class="flex gap-4 items-center">
+                <h1 class="text-xl font-bold">Mary Brown</h1>
+                <div class="flex gap-2 items-center text-contrast text-md lg:text-xl">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+              <p>"I was having trouble with my computer and needed help troubleshooting the problem. I posted a task on Favore and within minutes I had several taskers reach out to me. I ended up hiring one of them and they were able to fix my computer in no time. I was very happy with the service and would definitely use Favore again."</p>
+            </div>
+          </div>
+          <div id="user-review" class="flex gap-8 md:py-4">
+            <img src="./assets/user-4.png" alt="Reviewer profile picture" class="h-16"/>
+            <div>
+              <div class="flex gap-4 items-center">
+                <h1 class="text-xl font-bold">David Williams</h1>
+                <div class="flex gap-2 items-center text-contrast text-md lg:text-xl">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+              <p>"I was having a party and needed help setting up and cleaning up. I posted a task on Favore and within minutes I had several taskers reach out to me. I ended up hiring a few Taskers and they were all very helpful and efficient. The party was a success and I was very happy with the service."</p>
+            </div>
+          </div>
+        </div>
+        <div id="default-carousel" class="relative w-full lg:hidden" data-carousel="slide">
+          <!-- Carousel wrapper -->
+          <div class="relative h-[400px] overflow-hidden rounded-lg">
+               <!-- Item 1 -->
+               <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div id="user-review" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 py-8">
+                  <div class="flex flex-col items-center text-center py-4">
+                    <img src="./assets/user-1.png" alt="Reviewer profile picture" class="h-16"/>
+                    <h1 class="text-xl font-bold">Jhon Nick</h1>
+                    <div class="flex gap-2 items-center text-contrast text-md lg:text-xl">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+                  <p class="text-center text-lg">"I needed help assembling some furniture and Favore was a lifesaver! The tasker was very professional and efficient, and the job was done in no time. I would definitely use Favore again."</p>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div id="user-review" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 py-8">
+                  <div class="flex flex-col items-center text-center py-4">
+                    <img src="./assets/user-2.png" alt="Reviewer profile picture" class="h-16"/>
+                    <h1 class="text-xl font-bold">Mary Brown</h1>
+                    <div class="flex gap-2 items-center text-contrast text-md lg:text-xl">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+                  <p class="text-center text-lg">"I was having a party and needed help setting up and cleaning up. I posted a task on Favore and within minutes I had several taskers reach out to me. I ended up hiring a few Taskers and they were all very helpful and efficient. The party was a success and I was very happy with the service."</p>
+                </div>
+              </div>
+              <!-- Item 3 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div id="user-review" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 py-8">
+                  <div class="flex flex-col items-center text-center py-4">
+                    <img src="./assets/user-3.png" alt="Reviewer profile picture" class="h-16"/>
+                    <h1 class="text-xl font-bold">Susan Jones</h1>
+                    <div class="flex gap-2 items-center text-contrast text-md lg:text-xl">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+                  <p class="text-center text-lg">"I was having trouble with my computer and needed help troubleshooting the problem. I posted a task on Favore and within minutes I had several taskers reach out to me. I ended up hiring one of them and they were able to fix my computer in no time. I was very happy with the service and would definitely use Favore again."</p>
+                </div>
+              </div>
+              <!-- Item 4 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div id="user-review" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 py-8">
+                  <div class="flex flex-col items-center text-center py-4">
+                    <img src="./assets/user-4.png" alt="Reviewer profile picture" class="h-16"/>
+                    <h1 class="text-xl font-bold">David Williams</h1>
+                    <div class="flex gap-2 items-center text-contrast text-md lg:text-xl">
+                      <ion-icon name="star" size="large"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+                  <p class="text-center text-lg">"The tasker did a great job cleaning my house and I was very happy with the results. I would definitely use Favore again."</p>
+                </div>
+              </div>
+          </div>
+      </div>
+      </div>
     </section>
     <section id="about-section">
-
     </section>
     <section id="download-section">
 
