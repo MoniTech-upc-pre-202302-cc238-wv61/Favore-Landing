@@ -16,12 +16,12 @@
 
 @layer components {
   .btn-filled {
-    @apply text-lg font-medium text-snow;
+    @apply text-lg font-medium text-snow hover:cursor-pointer;
     @apply bg-secondary px-8 py-2 rounded-full;
     @apply hover:bg-primary duration-150
   }
   .btn-filled-no-hover {
-    @apply text-lg font-medium text-snow text-center justify-center;
+    @apply text-lg font-medium text-snow text-center justify-center hover:cursor-pointer;
     @apply bg-secondary px-8 py-2 rounded-full items-center;
   }
 }
